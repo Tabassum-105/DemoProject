@@ -1,0 +1,38 @@
+<div class="container">
+    <div class="column1">
+        <div class="heading">
+            <div>
+                <h3 class="sub-head1">POPULAR</h3>
+                <h1 class="sub-head2 bottom-spacing">RECIPES</h1>
+            </div>
+            <div  class="sub-head">SEE ALL</div>
+        </div>
+    </div>
+    <div class="column1">
+        <div class="right-align">
+            <div>
+                <h4 class="bottom-spacing">DO YOU WANT TO SHARE YOUR OWN RECIPE?</h4>
+            </div>
+            <div  class="sub-head right-align">SEND IT NOW</div>
+        </div>
+    </div>
+</div>
+<div class="scroll-container">
+    <div class="scroll-content">
+        <div *ngFor="let item of items" class="column">
+            <div><img class="img-size" src="{{item.img}}" alt="Taco"></div>
+            <div>
+                <h4>{{item.itemName}}</h4>
+            </div>
+            <div class="item-desc">{{item.itemDescription}}</div>
+        </div>
+    </div>
+</div>
+
+
+<button class="scroll-arrow" (click)="scrollRight()">
+    <img class="right-img"src="assets/right-arrow.png" alt="buttonpng" border="0" />
+</button>
+<button class="scroll-arrow left" (click)="scrollLeft()">
+    <img class="right-img"src="assets/left-arrow.png" alt="buttonpng" border="0" />
+</button>

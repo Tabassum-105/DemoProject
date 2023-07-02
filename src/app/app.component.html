@@ -1,0 +1,37 @@
+<app-header (newItemEvent)="addMenuItem($event)"></app-header>
+<div class="container">
+    <div class="sidebar">
+      <!-- <app-left-sidebar></app-left-sidebar> -->
+        <ul>
+          <li [ngClass]="{ 'active': currentSection === 1 }">
+            <span></span>
+            <div [ngClass]="{ 'visible': currentSection === 1 , 'hidden': currentSection != 1}">01</div>
+          </li>
+          <li [ngClass]="{ 'active': currentSection === 2 }">
+            <span></span>
+            <div [ngClass]="{ 'visible': currentSection === 2 , 'hidden': currentSection != 2}">02</div>
+          </li>
+          <li [ngClass]="{ 'active': currentSection === 3 }">
+            <span></span>
+            <div [ngClass]="{ 'visible': currentSection === 3 , 'hidden': currentSection != 3}">03</div>
+          </li>
+          <li [ngClass]="{ 'active': currentSection === 4 }">
+            <span></span>
+            <div [ngClass]="{ 'visible': currentSection === 4 , 'hidden': currentSection != 4}">04</div>
+          </li>
+          <li [ngClass]="{ 'active': currentSection === 5 }">
+            <span></span>
+            <div [ngClass]="{ 'visible': currentSection === 5 , 'hidden': currentSection != 5}">05</div>
+          </li>
+          <li [ngClass]="{ 'active': currentSection === 6 }">
+            <span></span>
+            <div [ngClass]="{ 'visible': currentSection === 6 , 'hidden': currentSection != 6}">06</div>
+          </li>
+        </ul>
+    </div>
+  
+    <div class="content">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+<!-- <router-outlet></router-outlet> -->

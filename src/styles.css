@@ -1,0 +1,17 @@
+/* You can add global styles to this file, and also import other style files */
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.large-heading {
+    font-size: 40px;
+}
+
+.sub-head {
+    margin-bottom: 20px;
+    display: inline-block;
+    background: #FFE4C4
+}
+.bottom-spacing{
+    margin-bottom: 5px;
+  }

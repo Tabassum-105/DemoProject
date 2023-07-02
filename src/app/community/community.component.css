@@ -1,0 +1,52 @@
+.column {
+    float: left;
+}
+
+/* Set width length for the left, right and middle columns */
+.left {
+    width: 50%;
+}
+
+/* .middle {
+    width: 30%;
+    } */
+
+.right {
+    width: 50%;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+    margin-bottom: 50px;
+}
+
+.mid-card {
+    padding-left: 400px;
+    width: 240px;
+}
+
+.img-card {
+    width: 250px;
+    display: inline-block;
+}
+
+.comment-card {
+    width: 250px;
+    display: inline-block;
+}
+
+.img-size {
+    height: 170px;
+    width: 170px;
+}
+
+.right-align {
+    float: right;
+}
+.left-card {
+    padding-left: 200px;
+    width: 250px;
+    display: inline-block;
+}

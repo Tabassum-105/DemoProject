@@ -1,0 +1,45 @@
+<div class="row">
+    <div class="mid-card">
+        <h2 class="large-heading bottom-spacing">OUR MENU</h2>
+        <div class="sub-head mid-align"> KNOW MORE </div>
+    </div>
+</div>
+<div class="container">
+    <div class="column column1" [@moveDownAnimation]="colState[0]">
+        <h2 class="dish-course large-heading">STARTERS</h2>
+        <div class="dish-block" *ngFor="let dish of menu.starterList">
+            <h6 class="dish-name">{{dish.dishName}}</h6>
+            <div class="dish-info">{{dish.dishInfo}}</div>
+            <div class="dish-cost">{{dish.dishCost}}</div>
+        </div>
+    </div>
+
+    <div class="column column2" [@moveUpAnimation]="colState[1]">
+        <h2 class="mains large-heading">MAIN COURSES</h2>
+        
+        <div class="dish-block" *ngFor="let dish of menu.mainCourseList">
+            <h6 class="dish-name">{{dish.dishName}}</h6>
+            <div class="dish-info"> {{dish.dishInfo}}</div>
+            <div class="dish-cost">{{dish.dishCost}}</div>
+        </div>
+        
+    </div>
+    <div class="column column3" [@moveDownAnimation]="colState[0]">
+        <h2 class="sides large-heading">SIDES</h2>
+        
+        <div class="dish-block" *ngFor="let dish of menu.sidesList">
+            <h6 class="dish-name">{{dish.dishName}}</h6>
+            <div class="dish-info"> {{dish.dishInfo}}</div>
+            <div class="dish-cost">{{dish.dishCost}}</div>
+        </div>
+
+    </div>
+    <div class="column column4" [@moveUpAnimation]="colState[1]">
+        <h2 class="desserts large-heading">DESSERTS</h2>
+        <div class="dish-block" *ngFor="let dish of menu.dessertList">
+            <h6 class="dish-name">{{dish.dishName}}</h6>
+            <div class="dish-info"> {{dish.dishInfo}}</div>
+            <div class="dish-cost">{{dish.dishCost}}</div>
+        </div>
+    </div>
+</div>

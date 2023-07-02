@@ -1,0 +1,48 @@
+.container {
+    display: flex;
+    
+  }
+  
+  .sidebar {
+    width: 100px;
+  }
+  
+  .content {
+    padding: 20px;
+    width: 100%;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  li {
+    margin-bottom: 20px;
+    padding: 1px;
+    border-bottom:2px solid #000;
+    cursor: pointer;
+    width: 50px;
+  }
+  
+  li.active {
+    border-bottom:2px solid #000;
+    width: 90px;
+  }
+  
+  span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .visible{
+    display: block;
+    position: absolute;
+    margin-left: 20px;
+    margin-top: -7px;
+  }
+  .hidden {
+    display: none;
+  }
